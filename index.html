@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link style="text/css" href="style.css" rel="stylesheet">
+	<title></title>
 </head>
 <body>
 
-<h2>Java srcipt body</h2>
+<h1 id="demo"></h1>
+<script >
+	
+var x = my_function(12,34);
+ 
+function my_function(a , b ) {
+	// body...
+	var result = a + b ;
+	return(result);
+}
 
-<p id = "demo" class="clr"></p>
-
-<script>
-document.getElementById("demo").innerHTML = "hello world"; 
+document.getElementById("demo").innerHTML = x;
 </script>
 
+
 </body>
-</html>
+</html>>
