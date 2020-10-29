@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<h2 id = "demo"> </h2>
+<button id="nm"></button>
+
+<script type="text/javascript">
+	
+function my_print(variable)
+{
+	document.getElementById("demo").innerHTML = variable ;
+}
+
+function print()
+{
+	for (var i = 1; i <= 100; i++) {
+		my_print(i);
+		console.log(i)
+	}
+}
+
+print() ;
+
+document.getElementById("nm").innerHTML=Date()
+
+
+</script>
+
+
+</body>
+</html>
