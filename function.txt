@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<h1 id="demo"></h1>
+
+<script >
+
+//even number check
+function even_number(number)
+{	
+	var res ;
+	if( number % 2 == 0 )
+		return(1) ;
+	else
+		return(0);
+}
+var g = 13 ;
+if( even_number(g) == 1)
+	document.write("even");
+else
+	document.write("odd");
+
+var name = 13 + "rubel " ;
+
+document.write(name)
+
+function check_string(variable)
+{
+	var check = "buet" ;
+	if (check == variable) {
+		document.write("hello");
+	}
+	else{
+		document.write("false condition execute here")
+	}
+}
+
+var get = "bubt" ;
+check_string(get)
+	
+function fact(number)
+{	
+	sum = 0 ;
+	for (var i = 1 ; i <= number; i++) {
+		sum = sum + i ;
+	}
+	return(sum);
+}
+	
+var catch_result = fact(100); 
+document.write(catch_result);
+
+var x= my_function(12,34);
+ 
+function my_function(a , b ) {
+	// body...
+	var result = a + b ;
+	return(result);
+}
+document.getElementById("demo").innerHTML = x;
+</script>
+
+
+</body>
+</html>
