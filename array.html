@@ -6,15 +6,23 @@
 <body>
 
 
+<button onclick="my_function()">please try here!</button>
+
 <p id = "demo"></p>
 
 <script type="text/javascript">
 	
+	var fruits = ["banana", "apple"];
+	document.getElementById('demo').innerHTML = fruits ;
 
-var cars = ["bmw", "volvo" , "totota"] ;
-document.getElementById('demo').innerHTML = cars ;
+	function my_function()
+	{
+		fruits.sort();
+		document.getElementById('demo').innerHTML = fruits ;
+	}
+
+
 </script>
-
 
 </body>
 </html>
